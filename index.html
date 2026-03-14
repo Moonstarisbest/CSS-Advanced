@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<html data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <title>Page Title</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <header><h1>Tily's Art Booth</h1>
+</header>
+    <nav class="nav">
+        <div class="links" id="nav-links">
+        <a href="#products">For Sale!</a>
+        <a href="#pricing">Prices</a>
+        </div>
+        <button id="themeToggle" type="button">
+    Toggle between light/dark
+</button>
+    </nav>
+<h2 id="products">Products for Sale!</h2>
+<p>Here are some of the awsome products that I currently have for sale!</p>
+<div class="grid">
+    <div><img src="Tbh.png" alt="A drawing of the TBH creature."></div>
+    <div><img src="adhdboy.webp" alt="A drawing of the ADHD creature."></div>
+    <div><img src="sadness.jpg" alt="A drawing of a sad hamster."></div>
+</div>
+<h2 id="pricing">Pricing of Items!</h2>
+<p>Here's an easy list for the prices of my amazing art!</p>
+<div id class="price">
+    <div>Small print: $9.99</div>
+    <div>Medium print: $19.99</div>
+    <div>Large print: $29.99</div>
+</div>
+</body>
+<script>
+const root = document.documentElement; // <html>
+const btn = document.getElementById("themeToggle");
+btn.addEventListener("click", () => {
+const isDark = root.getAttribute("data-theme") === "dark";
+root.setAttribute("data-theme", isDark ? "light" : "dark");
+});
+</script>
+</html>
