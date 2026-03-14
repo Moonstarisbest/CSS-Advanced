@@ -108,3 +108,16 @@ img {
     height: auto;
 }
 }
+.work {
+ width: 100px;
+  height: 100px;
+  position: relative;
+  animation-name: myAnimation;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+@keyframes myAnimation {
+  0%   {background-image: url('aheart.png'); left:0px; top:0px;}
+  100%  {background-image: url('aheart.png'); left:1280px; top:0px;}
+
+}
